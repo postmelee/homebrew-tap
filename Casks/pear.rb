@@ -22,7 +22,7 @@ cask "pear" do
 
   caveats do
     <<~EOS
-      Pear downloads a Wine runtime that requires Rosetta 2.
+      Runtime requirements: https://postmelee.github.io/pear/download.html
       Open Pear to review and install its runtime and Windows Steam.
       Close games and quit Steam and Pear before upgrading or uninstalling.
       Uninstalling this cask preserves Steam, games and saves in:
