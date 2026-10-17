@@ -11,14 +11,18 @@ cask "pear" do
   desc "Run Windows Steam games"
   homepage "https://postmelee.github.io/pear/"
 
+  livecheck do
+    skip "Preview releases are updated after Pear qualification"
+  end
+
   depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Pear.app"
 
   caveats do
-    requires_rosetta
     <<~EOS
+      Pear downloads a Wine runtime that requires Rosetta 2.
       Open Pear to review and install its runtime and Windows Steam.
       Close games and quit Steam and Pear before upgrading or uninstalling.
       Uninstalling this cask preserves Steam, games and saves in:
