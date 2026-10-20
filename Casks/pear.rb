@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: 2026 Pear contributors
 # SPDX-License-Identifier: GPL-3.0-or-later
 cask "pear" do
-  version "0.1.0"
-  sha256 "38239f3ce37de8021c918c548018fdd45c08b9efa72d817cf39bfb0fd83504fb"
+  version "0.1.1"
+  sha256 "15a0343ba003e3cc74277387d098b7ca8c54cc07dba4b600ff9afb211c94cbae"
 
   url "https://github.com/postmelee/pear/releases/download/v#{version}/Pear-#{version}-macos-arm64.dmg"
   name "Pear"
